@@ -5,10 +5,12 @@ import reportWebVitals from "./reportWebVitals";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import userReduser from "./features/user";
+import themeReduser from "./features/theme";
 
 const store = configureStore({
   reducer: {
     user: userReduser,
+    theme: themeReduser,
   }, //function that takes information about  current state and action on that state and then returns new state
 });
 
