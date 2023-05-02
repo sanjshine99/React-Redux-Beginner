@@ -1,7 +1,14 @@
 import "./App.css";
+import Profile from "./components/Profile";
+import Login from "./components/Login";
 
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <Profile />
+      <Login />
+    </>
+  );
 }
 
 export default App;
